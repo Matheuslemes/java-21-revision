@@ -1,5 +1,35 @@
 package fundamentos.tipos;
 
+/**
+ * PrimitivosResumo.java
+ *
+ * Resumo dos tipos primitivos em Java:
+ * 1) Integrais com sinal: byte(8b), short(16b), int(32b), long(64b)
+ * 2) Ponto flutuante: float(32b, IEEE 754), double(64b, IEEE 754)
+ * 3) Caractere: char(16b, UTF-16 code unit)
+ * 4) Booleano: boolean(1 bit lógico; implementação depende da JVM)
+ *
+ * Observações importantes:
+ * - Tamanhos são fixos por especificação (não variam por plataforma).
+ * - Valores default só existem para *campos* de instância/estáticos:
+ *      byte/short/int/long -> 0
+ *      float/double       -> 0.0
+ *      char               -> '\u0000' (NUL)
+ *      boolean            -> false
+ *      (para variáveis locais não há default; é obrigatório inicializar)
+ * - Literais:
+ *      Inteiros: decimal, binário (0b...), octal (0...), hexa (0x...)
+ *      Separadores: underscores em literais numéricos (ex.: 1_000_000)
+ *      Sufixos: long -> L/l, float -> F/f, double -> D/d (D é opcional)
+ * - Casting:
+ *      Widening (ampliação) é seguro: byte->short->int->long->float->double
+ *      Narrowing (redução) exige cast e pode causar perda/overflow.
+ * - Overflow inteiro em Java *não* lança exceção (wrap-around: módulo 2^n).
+ * - Ponto flutuante segue IEEE 754: +Infinity, -Infinity e NaN existem.
+ * - char guarda um code unit UTF-16 (cuidado com emojis/suplementares).
+ * - Para dinheiro/precisão exata: BigDecimal (não-primitivo).
+ */
+
 public class TiposPrimitivos {
 
     public static void main(String[] args) {

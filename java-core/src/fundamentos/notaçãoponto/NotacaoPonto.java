@@ -1,5 +1,22 @@
 package fundamentos.notaçãoponto;
 
+/**
+ * NotacaoPontoResumo.java
+ *
+ * "Notação ponto" (dot notation) em Java:
+ *  - Instância: objeto.membro / objeto.metodo(...)
+ *  - Estático:  Classe.membroEstatico / Classe.metodoEstatico(...)
+ *  - Qualificação de pacotes e tipos: pacote.subpacote.Classe
+ *  - Encadeamento (fluent): obj.metodo().outro().final()
+ *  - Acesso especial: this.campo, super.metodo(), array.length (sem parênteses)
+ *
+ * Observações:
+ *  - Precedência:  a.b  tem alta precedência; leitura é da esquerda p/ direita.
+ *  - Null-safety:  acessar algo via ponto em null -> NullPointerException.
+ *  - Não confundir com "::", que é *method reference* (outra sintaxe).
+ */
+
+
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
